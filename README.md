@@ -68,8 +68,12 @@ Come Giocare:
           }
         ];
 
+4. **Modificare lo style** di un elemento
 
+       const paragraph = document.querySelector('p');
+       paragraph.style.display = 'block';
 
+5. **molto altro ancora**: tutto trascritto nell'esercizio stesso.
 
 
 ## Licenza
