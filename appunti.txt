@@ -1,0 +1,108 @@
+💻🥷 querySelector() è un metodo in JavaScript utilizzato per selezionare il primo elemento che corrisponde a un selettore CSS specificato all'interno del documento.
+
+// Seleziona il primo elemento con la classe 'example'
+let element = document.querySelector('.example');
+
+// Seleziona il primo elemento con l'id 'myId'
+let elementById = document.querySelector('#myId');
+
+// Seleziona il primo elemento 'div'
+let divElement = document.querySelector('div');
+
+Caratteristiche:
+Se non viene trovato alcun elemento, restituisce null.
+È possibile utilizzare selettori complessi come combinazioni di classi, id, pseudo-classi e altro ancora.
+
+
+------------
+The innerText property controls the text that appears in an HTML element. For example:
+
+<p id="info">Demo content</p> 
+const info = document.querySelector("#info"); 
+info.innerText = "Hello World"; 
+
+The following example would change the text of the p element from Demo content to Hello World.
+
+in questo caso, richiamando la funzione, cambio il nome del bottone
+function goStore() {
+  button1.innerText = "Buy 10 health (10 gold)";
+}
+
+innerText: viene utilizzato per ottenere o impostare il testo visibile all'interno di un elemento, ignorando eventuali tag HTML presenti nel contenuto. Non interpreta il markup HTML, quindi i tag vengono trattati come testo normale.
+
+innerHTML:  viene utilizzato per ottenere o impostare il contenuto HTML di un elemento. Questo significa che se il contenuto include tag HTML, questi verranno interpretati e resi come tali.
+
+
+
+----------
+OGGETTI
+
+oggetto vuoto
+const cat = {};
+
+istanziare oggetto con proprietà
+const cat = {
+  name: "Whiskers",
+  "Number of legs": 4
+};
+
+importante: , o vuoto no ;
+
+const cat = {
+  name: "Whiskers",
+  "Number of legs": 4,
+}
+console.log(cat["Number of legs"]);
+console.log(cat.name);
+
+
+ARRAY DI OGGETTI
+const locations = [
+  {
+    name: "town square",
+    "button text": ["Go to store", "Go to cave", "Fight dragon"],
+    "button functions": [goStore, goCave, fightDragon],
+    text: "You are in the town square. You see a sign that says \"Store\"."
+  },
+  {
+    name: "store",
+    "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
+    "button functions": [buyHealth, buyWeapon, goTown],
+    text: "You enter the store."
+  },
+  {
+    name: "cave",
+    "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
+    "button functions": [fightSlime, fightBeast, goTown],
+    text: "You enter the cave. You see some monsters."
+  }
+];
+
+
+
+
+------------------
+MODIFICARE STYLE DI UN ELEMENTO
+
+const paragraph = document.querySelector('p');
+paragraph.style.display = 'block';
+
+
+
+------------------------------
+PROBABILITà
+
+La condizione Math.random() > 0.2 in JavaScript viene utilizzata per generare un valore booleano (true o false) basato su un numero casuale.
+
+Dettagli della Funzione:
+
+Math.random(): Questa funzione genera un numero pseudo-casuale compreso tra 0 (incluso) e 1 (escluso).
+> 0.2: Questa condizione confronta il numero generato da Math.random() con 0.2.
+Significato:
+
+Math.random() > 0.2 sarà true se il numero generato è maggiore di 0.2.
+Math.random() > 0.2 sarà false se il numero generato è minore o uguale a 0.2.
+Probabilità:
+
+La probabilità che Math.random() > 0.2 sia true è 80% (0.8), perché la maggior parte dei numeri generati (da 0 a 1) saranno maggiori di 0.2.
+La probabilità che Math.random() > 0.2 sia false è 20% (0.2), perché solo i numeri tra 0 e 0.2 (incluso 0.2) soddisferanno questa condizione.

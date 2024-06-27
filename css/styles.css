@@ -1,0 +1,86 @@
+.sarabun-light {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sarabun-regular {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarabun-regular {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #0a0a23;
+}
+
+#text {
+  background-color: #0a0a23;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+#game {
+  max-width: 600px;
+  max-height: 700px;
+  background-color: #ffffff;
+  color: #ffffff;
+  margin: 30px auto 0px;
+  padding: 10px;
+}
+
+#controls,
+#stats {
+  border: 1px solid #0a0a23;
+  padding: 15px;
+  color: #0a0a23;
+  text-align: center;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#monsterStats {
+  display: none;
+  border: 1px solid #0a0a23;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #c70d0d;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+}
+
+.stat {
+  padding-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #e74c3c;
+  background-image: linear-gradient(#f1948a, #c0392b);
+  border: 3px solid #0a0a23;
+  padding: 10px 20px;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

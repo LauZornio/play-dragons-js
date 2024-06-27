@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RPG - Dragon Repeller</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Layout Game-->
+    <div id="game">
+      <!--stats: stato del giocatore-->
+      <div id="stats">
+        <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+        <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+        <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+      </div>
+
+      <!--controls: bottoni che variano in base alla schermata-->
+      <div id="controls">
+        <button id="button1">Vai al negozio</button>
+        <button id="button2">Vai alla grotta</button>
+        <button id="button3">Sconfiggi il drago</button>
+      </div>
+
+      <!--monsterStats: sezione che appare quando c'è il combattimento con il mostro-->
+      <div id="monsterStats">
+        <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+        <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+      </div>
+
+      <!--text: sezione del testo-->
+      <!--questo testo compare solo la prima volta-->
+      <div id="text">
+        Benvenuti a Cacciatore di Draghi. </br> Devi sconfiggere il drago che impedisce alle persone di lasciare la città.</br>Hai a disposizione 50 Monete d'oro per acquistare Vita e Armi. Parti con 100 Punti Vita e possiedi 0 di Punti Esperienza.</br>I punti esperienza servono per poter infliggere più danno ai mostri e per poter resistere maggiormente agli attacchi! </br></br> Sei nella piazza della città. Dove vuoi andare? </br></br>Utilizza i pulsanti qui sopra.</br> "Vai al negozio" per comprare armi e punti vita </br> "Vai alla grotta" per sconfiggere mostri </br> "Sconfiggi il drago" per combattere contro il drago!
+      </div>
+    </div>
+    
+    <script src="js/custom.js"></script>
+  </body>
+</html>
